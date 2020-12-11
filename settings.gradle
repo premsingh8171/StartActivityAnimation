@@ -1,0 +1,3 @@
+include ':StartActivityAnimationLibrary'
+include ':app'
+rootProject.name = "StartActiviyAnimation"
