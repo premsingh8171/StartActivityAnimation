@@ -9,16 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StartActiviyAnimation">
-        <activity android:name=".demo.Activity4"></activity>
-        <activity android:name=".demo.Activity3" />
-        <activity android:name=".demo.Activity2" />
-        <activity android:name=".demo.MainActivity">
+
+        <activity
+            android:name=".demo.Activity4"
+            android:exported="false" />
+
+        <activity
+            android:name=".demo.Activity3"
+            android:exported="false" />
+
+        <activity
+            android:name=".demo.Activity2"
+            android:exported="false" />
+
+        <activity
+            android:name=".demo.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

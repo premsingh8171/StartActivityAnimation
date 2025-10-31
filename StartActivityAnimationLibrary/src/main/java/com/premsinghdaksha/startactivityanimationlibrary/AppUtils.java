@@ -41,3 +41,4 @@ public class AppUtils {
         activity.startActivity(browserIntent);
     }
 }
+
