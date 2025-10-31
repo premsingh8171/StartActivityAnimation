@@ -3,6 +3,18 @@ plugins {
     id 'maven-publish'
     id 'org.jetbrains.kotlin.android' version '2.1.0'
 }
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.premsingh8171'
+                artifactId = 'startactivityanimationlibrary'
+                version = '2.0.0'
+            }
+        }
+    }
+}
 
 android {
     compileSdkVersion 36
@@ -29,7 +41,7 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
 
-    
+
 }
 
 dependencies {
